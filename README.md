@@ -78,3 +78,13 @@ mit
     In this where we can set the language for particular user
     In precison where we can set precision for the particular user
     In show or hide modules we can access in the ERP home page but it is depreceated in from V15
+
+    %Data Import%
+    This is the important feature let assume the customer wants to upload their old of 500 data we cannot do the manual entry so we use the excel,csv or google sheets to upload the bulk data  so where we have two options first the insert new records and next is update the existing data 
+
+    * First we should download the template by choosiing the doctype with the needed fields then we can easily do the changes or enter the data
+    *second we should not give the duplicate data then it shows duplicate data error and we should not change the field name after we create the data import document then also it shows error 
+    *third where we can import the files from local,library or from the google sheets and where if it is google sheets we dont want to import the always the file from local and where if we use the google sheets we should keep the public access for that file and we should only copy and give the url tab link
+    *If any error it will throw the error in each row if not it will add that data 
+    *During the update of record we cannot change the id of any record
+    * we should not also give large data like 50000 so we split and add the data

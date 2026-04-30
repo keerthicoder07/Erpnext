@@ -64,3 +64,17 @@ mit
 
     %Delete%
     In this where the owner or the administrator can clear all the transactions and invoices of the company but it should be done cautios because once it is deleted then it cannot be retrived
+
+    %System Settings%
+    In this where we can set the default like language,time and country then where we can set the session settings and login methods,then default email settings of the company and the uploading of the files, they can also disable the notifications,they can also set the default backups and control the backgroud jobs and can reduce their usage by restricting to run once in a day
+
+    %Global defaults%
+    In this where we can set the defaults values like company name,currency and coutry etc
+
+    %Domain settings%
+    By using this we can disable the domain that should be disable and user cannot use it
+
+    %Set settings%
+    In this where we can set the language for particular user
+    In precison where we can set precision for the particular user
+    In show or hide modules we can access in the ERP home page but it is depreceated in from V15

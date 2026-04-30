@@ -39,3 +39,7 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 ### License
 
 mit
+
+
+%Introduction%
+    The ERP next is a open source which used to build app for all the comapnies form small scale to large scale for their enterprise maitainance including accouting,crm etc and since it is the open source where any one can use to build their app and can deploy in the frappe cloud or any other cloud platform so it is easy to maintain for the users and have their own flexibility and customizations.

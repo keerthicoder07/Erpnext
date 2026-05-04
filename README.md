@@ -82,9 +82,23 @@ mit
     %Data Import%
     This is the important feature let assume the customer wants to upload their old of 500 data we cannot do the manual entry so we use the excel,csv or google sheets to upload the bulk data  so where we have two options first the insert new records and next is update the existing data 
 
-    * First we should download the template by choosiing the doctype with the needed fields then we can easily do the changes or enter the data
+    * First we should download the template by choosing the doctype with the needed fields then we can easily do the changes or enter the data
     *second we should not give the duplicate data then it shows duplicate data error and we should not change the field name after we create the data import document then also it shows error 
     *third where we can import the files from local,library or from the google sheets and where if it is google sheets we dont want to import the always the file from local and where if we use the google sheets we should keep the public access for that file and we should only copy and give the url tab link
     *If any error it will throw the error in each row if not it will add that data 
     *During the update of record we cannot change the id of any record
     * we should not also give large data like 50000 so we split and add the data
+
+    %Chart Of Accounts Importer%
+    Where we can import the structure of chart accounts using this tool before making any transactions where we can download the template and can edit according to the user and can import that for the change of structure and if it is the child company then parent company should give the permission to chnage the structure else the same parent's coa itself apply for that company also
+
+    %Export%
+    In this we have the export tool where we can export the data as csv or excel and even we can filter out the data we needed and the second option is download the backups of db where by default it saves every 8 hours and we can set number to take backups to download at the time and even we have the facility to take the backups from cloud and we can also send the download link files in the email including the public and private and we can also encrypt the backups to make more safe
+
+    %Bulk Operations%
+    Bulk update
+        where we can bulkly update the particular field of the doctype instead we manually changes every thing and we can also set how many records to update at the time 
+    Bulk rename
+        where it is used to rename the id of the documents where it is only applicable to non-core doctypes we cannot change the id for core doctypes
+    Delete company transactions
+        where using this tool we can delete company transactions like doctypes and records and where it is irreversible so we should handle it more carefully and only the owner and administrator have that access to delete it

@@ -102,3 +102,9 @@ mit
         where it is used to rename the id of the documents where it is only applicable to non-core doctypes we cannot change the id for core doctypes
     Delete company transactions
         where using this tool we can delete company transactions like doctypes and records and where it is irreversible so we should handle it more carefully and only the owner and administrator have that access to delete it
+    
+    %Personal Data%
+        where using this tool we can dowload the personal data as json file using request data url and can see the request record in personal data download request as same we can also request the delete account using the request delete and can delete the personal data account by verfying through email or in by showing the link in the website for that particular user
+    
+    %user permissions%
+        Where we can manage the customers,employee and all other members who involve in this company and we can set the permissions also based on the role,document,and field also so we can maintain the data securely and also we set the user permissions and can choose the doctype to the users to access that alone and can also in advanced we can set the value based permission also so we can manage best user management

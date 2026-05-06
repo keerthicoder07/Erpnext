@@ -108,3 +108,6 @@ mit
     
     %user permissions%
         Where we can manage the customers,employee and all other members who involve in this company and we can set the permissions also based on the role,document,and field also so we can maintain the data securely and also we set the user permissions and can choose the doctype to the users to access that alone and can also in advanced we can set the value based permission also so we can manage best user management
+    
+    %Role permssions%
+        Here I learned hoe to keep the read write permissions to the particular users and learn how to keep the perm levels and learnt about the perm level errors where we should fix the system manager level as 0 or remove the perm level 1 or 2 for that user and learnt about maxiumu user limit based on subscription

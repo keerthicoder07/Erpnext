@@ -111,3 +111,21 @@ mit
     
     %Role permssions%
         Here I learned hoe to keep the read write permissions to the particular users and learn how to keep the perm levels and learnt about the perm level errors where we should fix the system manager level as 0 or remove the perm level 1 or 2 for that user and learnt about maxiumu user limit based on subscription
+    
+    %Open invoice creation tool%
+        Let's keep scenario when a customer comes new to the ERP they have unclose invoices which is used to maintain the accounting and ledger so to import that bulk data we use open invoice creation tool and where we can create new supplier or customer using the create missing party where it automatically add in the supplier table or customer table 
+    
+    %period closing voucher%
+        Where it is used to close the fiscal year expenses of that company which is used to calculate the profit and losses and completely close that year accounts and if any payable or recivables is pending where during the audit they can create another period closing voucher and can make a journal entry to add that expense or income to the same fiscal year
+    
+    %Accounting Period%
+        Where the accounting period is used to create the fiscal year where after that period we cannot create any sales or purchase orders which will block because to maintain the audit intergrity and where we cannot create the journal entry also if the period is closed
+
+    %Fiscal Year%
+        Where the fiscal year is similar to the financial year where it can be even fix as default and also can set less or more than 12 months and we can mention the companies which will come under that fiscal year
+    
+    %Mode of payment%
+        where we can set the mode of payment for each company to maintain the point of sales(pos) and where we can create the mode of payment and can use it during the payment entry
+    
+    %Payment Term Templates%
+        where it hepls during the payment request where we can set the payment template first to get the advance and next after the completion of shipping or job we can transfer the remaining 70 % of money so it is easy to maintain the payments

@@ -129,3 +129,31 @@ mit
     
     %Payment Term Templates%
         where it hepls during the payment request where we can set the payment template first to get the advance and next after the completion of shipping or job we can transfer the remaining 70 % of money so it is easy to maintain the payments
+    
+    %Sales Taxes and Charge Template%
+        This is the template where we can define the tax and charge template for the sales in this we have 5 types of tax they are
+            actual-fix amount
+            on previous row amount-where it includes only the tax amount of the reference row
+            on prevoius row total-where it includes tax amount for that whole total
+            on net amount-where it will apply the tax on net total
+            on item quantity-where it will apply the tax on each and every item 
+        
+        where we can also keep the item tax template for the particular item even if the default is applied it overrides where we can see in the tax breakup
+    
+    %Purchase Taxes and Charge Template%
+        Where it also follows the same tax engine but where it apply to suppliers instead of customers
+    
+    %Tax Rule%
+        Instead of selecting the the tax category manually for each and every customer during the sales order or sales invoice where we can define rules where it will automatically set so there will be no human error and where we should only maintain the either rule or tax template for each item else where it will creates the duplicate tax entry
+    
+    %Tax category%
+        This can be set in the rule and tax template to choose the tax according to the state and nations for example for state it applies the sgst+cgst and if it is between the inter states there separate category will applies so it helps to mainitain the tax for varsius scenario and where we can even set that in the account master to apply by default
+    
+    %Tax Template%
+        where for each customer we can fix the separate the tax template what type of taxes should be apply and where we can also fix that for both suppliers and customers according to sales and purchase and it also easy to mainitain the tax for each and every customers and suppliers
+    
+    %Item Tax Template%
+        In this template where some items or group of items will have the separate tax for them so to exclude that from standard tax we sue this template even if the default is apply for that invoice or order where it will override that apply the item tax template rate to that particular product
+    
+    %Tax witholding template%
+        Where durting the sales or purchase payments if any tds or tcs is applied it also adds or deducts in the grand total and reflects as three ledger entry in account ledger one as debit or credit of accounts and the tds debit or credit so it easy to maintain the goverment taxes

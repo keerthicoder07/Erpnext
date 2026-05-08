@@ -156,4 +156,24 @@ mit
         In this template where some items or group of items will have the separate tax for them so to exclude that from standard tax we sue this template even if the default is apply for that invoice or order where it will override that apply the item tax template rate to that particular product
     
     %Tax witholding template%
-        Where durting the sales or purchase payments if any tds or tcs is applied it also adds or deducts in the grand total and reflects as three ledger entry in account ledger one as debit or credit of accounts and the tds debit or credit so it easy to maintain the goverment taxes
+        Where durting the sales or purchase payments if any tds or tcs is applied it also adds or deducts in the grand total and reflects as three ledger entry in account ledger one as debit or credit of accounts and the tds debit or credit so it easy to maintain the goverment taxes 
+    
+    %TCS%
+        For this where we can only apply with cumulative threshold and we assign to the customer and where it automatically saves
+    
+    %Lower Deduction Certificate%
+        Where this apply when some suppliers have comes under some scheme and the normal tax not applied then we use the lower deduction certificate where if normal tax has 5% and by using it we can have 1% for that particular supplier
+    
+    %Tax applies on Total or valuvation%
+        where it is mainly used in maintaining the balance on the accounts of inventory if it is the total where it just affects the supplier payable like the tax of gst,vat etc and the valuvation just increase the stock like we use internal transportation and where if both gst and transportation done by the supplier both the total and valuvation increases
+    
+    %Tax Inclusive Accounting%
+        where some items will billed including the tax for that items where we can just tick the enable checkbox includes in the basic rate and where we can set it in the sales tax and charges template
+    
+    %Serial and bundle%
+        where every item should have the physical serial no to identify unique and bundle no for every transaction so it is easy to maintain the stock and helpful to stock restore and to generate the purchase reciept and also it automatically creates the bundle no for inward and outward entry and to update the serial and batch no manually we can import using the csv or excel
+    
+    %Stock Reconciliation%
+        where it is used to make the entry and for counting the stock in the warehouse where we can alos maintain the opening stock and remaining stock updates which used to purchase the items that are in the low stock
+    
+

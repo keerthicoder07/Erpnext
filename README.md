@@ -176,4 +176,41 @@ mit
     %Stock Reconciliation%
         where it is used to make the entry and for counting the stock in the warehouse where we can alos maintain the opening stock and remaining stock updates which used to purchase the items that are in the low stock
     
+    %Opening Balance Account%
+        where after the end of fiscal year the company may have the bank balance and liabilities so to maintain that where we create the account temporary opening ans add the assests in debit and liabilities to the credit to their respective accounts and where atlast the balance must be zero because where to know where from the source comes and where it goes so it is easy to transfer the bank balances and liabilites to be pay during the new fiscal year
+    
+    %Multi currency Accounting%
+        In this where we can set the party currency to their bank accounts currency anad where the transaction can be only make if the company also have the default account in that currency and also where we should always be careful before making any transactions because that only affects in the report ledger so always ensure the currency before transactions or it will create inefficiency in the report generation
+    
+    %Balance Sheet Accounts%
+        In this where we can generate the report and check whether the assests and liabilities are equal by ensuring whether the balance sheet has zero balance during the end and start of the year to transfer the balance details in each and every account to maintain the proper accout details without any conflicts.
+    
+    %Profit and Loss Accounts%
+        In this where it will maintain the income and expenses account and it will give how much profit or loss we attained and generate the report for us and the if we get the profit where that money will be credited to the account of the equity or capital using opening entry using the temporary opening account so the profit and loss reset to zero at every start of the year
+    
+    %Groups and Ledgers%
+        where the groups are just heads where they can have the chidren but cannot make the transactions but ledgers are the child of group where they can record the transactions so in COA we have the four groups assests,income,expenses,liabilities and where each group have their ledgers to make the transactions
+    
+    %sales Invoice%
+        where the sales invoice plays a major role in the erp where it have several options lets see all that
+
+        FLOW
+        first we create the sales order to get the confirmation of the customer approval
+        second we create the delivery note to update the stock and it is also skipable if it is direct sale
+        third we create the sales invoice and where we can use many functionalities here
+
+            *We can use the pos profile for the billing terms for the particular customers or products
+            *payment terms -where we can set here or the default for the customers in masters account
+            *We can get the invoice discounting using this sales invoice
+            *we can create the credit note if there is any return of product
+            *we can make the immediate pos payment
+            *we can mention the shipping and customer details 
+            *we can add the campaign and sources for the marketing purposes
+            *Rate adjustment entry if any changes in the previous invoice
+            *we can apply the additional discount as grand total or net total
+            *we can also update the stock without delivery note
+            *we can add the subscrription invoice if it is
+            *We can add the loyalty program and reedem points 
+            *Where we can add the timesheets like hour billing for employee based on the timesheet
+    
 

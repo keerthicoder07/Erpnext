@@ -212,5 +212,15 @@ mit
             *we can add the subscrription invoice if it is
             *We can add the loyalty program and reedem points 
             *Where we can add the timesheets like hour billing for employee based on the timesheet
+    %Credit Note%
+        When a customer need the refund for the product by returning it we use the credit note where it creates the credit note for the customer and where we can update the stock also and in the ledger also we can see that where the payment can be done and also can reduce the amount in the future invoices for that customer
     
+    %Payment Recoincillation%
+        when the company decides to reduce the amount from the future invoice bill where we will create the recoincillation and it directly make changes in the outstanding field by reducing the outstanding  amount in the invocie which will be balanced in the general ledger also.
+    
+    %Dunning%
+        The dunning is the tool where we can get the interest for the overdue invoices so we can also have the templates and notice for that like first and second notice in first notice we can just give the warning where in next notice we can put the interest rate for that and 
+    
+
+
 

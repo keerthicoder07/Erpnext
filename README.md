@@ -219,8 +219,48 @@ mit
         when the company decides to reduce the amount from the future invoice bill where we will create the recoincillation and it directly make changes in the outstanding field by reducing the outstanding  amount in the invocie which will be balanced in the general ledger also.
     
     %Dunning%
-        The dunning is the tool where we can get the interest for the overdue invoices so we can also have the templates and notice for that like first and second notice in first notice we can just give the warning where in next notice we can put the interest rate for that and 
+        The dunning is the tool where we can get the interest for the overdue invoices so we can also have the templates and notice for that like first and second notice in first notice we can just give the warning where in next notice we can put the interest rate for the invoice
     
+    %General Ledger%
+        In the general ledger where all the entries will be recorded with debit and credit and where it is based on the general ledger table and it also record the what type of transaction,voucher and records the bank account that invloves in the transaction and where we can apply the various filters 
+    
+    %Trial Balance%
+        Where in the trial balance report we can see the balance of all account during the time period where opening dr is the amount own by company before the starting date and opening credtors also the how many credits the company owns and the debit and credit are the in between transactions by the company during that time period and closing debtors and credtors are the money that owns and to payable by the company upto that time period
+    
+    %Balance Sheet%
+        where in this we can see the assest balance,liability and the equity balance for the fiscal year and we can see for the previous fiscal years also we can choose any currency to check the balances and also can apply many filters in it.
+    
+    %Cash Flow%
+        In this report we can see the how much cash come in and goes during the fiscal year and we can also ensure the liquidity of the company
+    
+    %Profit loss statement%
+        In this report also where we can see the total income and the total expense and by calculating the difference between it and gives the how much profit or a loss the company gains for that fiscal year
+    
+    %Consolidated financial report%
+        In this report where we can see all the balance sheet,profit and loss statement,cash flow of all the internal or child company of the parent company so where the cutomer can get the overall profil/loss or balance data of the whole enterprise to see over all performance of the company financially
+    
+    %Deffered Revenue%
+        In this report we can see the subscrption split amounts that is sending to the deffered revenue account from the income account and we can see the visual and ledger report how it works and where it helps to maintain the monthly record where the deffered revunue gets debit and in the income account there will be credit so we can generate the yearly report correctly.
+    
+    %Payment Term Status Report%
+        Where it is used to check the payemnt status of the sales invoice with its terms whether it is the advance or full payment so helps to check the paid and unpaid easily
+    
+    %Purchase order%
+        Where by using the material request we can get the items need for the company and can wait for the official approval if there any changes we can change here and after submitting where we can create the purchase receipt 
+    
+    %Purchase Receipt%
+        In this where we can confirm that the order is recieved and where it make the general ledger entry where in the stock in hands it debits the amount and in the stock recieved but not recieved it will make the credit and after the submitting the receipt where we can generate the purchase invoice 
+    
+    %purchase invoice%
+        In this where we can make the bill for the purchase receipt where we also have the options to hold the invoice for specific reasons and can also hold indefinitely or can choose the release date when we submit the purchase invoice in the stock ledger where the  stock received but not billed will get the debit and credit goes to accounts payable(credtors) and atlast when we pay the bill for that invoice then credtors will be debit and where the credit goes to the paid account of the company and the complete flow is
 
+        example invoice amount(1000)
+
+                                        Debit                                   Credit
+        purchase receipt --->           1000(stock in hands)                    1000(stock received but not billed)
+
+        purchase invoice --->           1000(stock received but not billed)     1000(Account payable(credtors))
+
+        After Payment    --->           1000(credtors)                          1000(Bank account that paid from company(Sample ERP-canara))
 
 

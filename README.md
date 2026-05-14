@@ -262,5 +262,18 @@ mit
         purchase invoice --->           1000(stock received but not billed)     1000(Account payable(credtors))
 
         After Payment    --->           1000(credtors)                          1000(Bank account that paid from company(Sample ERP-canara))
+    
+    %Provisional Allotment Account%
+        where we create the account for the non stock items to create the purchase invoice for the service we used not the stock we should use this provisional allotment account for the transaction and where for that we can create purchase receipt and purchase invoice before that where we should set the default account and enable in the company master settings
+    
+    %Debit Note%
+        In this when a buyer wants to return the product to the supplier they will create the debit note and where it will make the credit form stock recieved but not billed and after the payment where the assests get the money from the credtors and it is the debit note which reverses the purchase flow to get back the money from the supplier
+    
+    %Bank%
+        In this where we can create the bank and give the name to it and where after that we can do the reconcilation with invoice and payment entry by importing data configuration the bank transactions as per the field in the ERPnext.
+    
+    %Bank Account%
+        In this we can create the bank accounts and can choose whether it is a company account or a default account and if the bank supports the plaid integration we can just choose the date to synchronize the transactions and after where we can recoincile them with payment transactions
+    
 
 

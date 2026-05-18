@@ -275,5 +275,21 @@ mit
     %Bank Account%
         In this we can create the bank accounts and can choose whether it is a company account or a default account and if the bank supports the plaid integration we can just choose the date to synchronize the transactions and after where we can recoincile them with payment transactions
     
+    %Bank Transaction%
+        In this where the bank account should properly link with COA account of the company and where this tool is used to maintain the bank transactions and where we can also make entry using the bank statement import and which helps to make a bulk entry
+    
+    %Bank Reconcillation%
+        In this where we can reconcillate the payment entry and bank transaction which are unreconcile and can link them and here we have several filters to apply where we can link through payment,journal entry and sales invoice,purchase invoice and using the exact amount and where we can also filter using the reference date
+    
+    %Auto Reconcile%
+        Where it automatically matches the match against voucher and make the link between the transaction and payment entry but it should be match correctly with the bank account and it is not much efficient because it matches using the code logic not the AI
+    
+    %Fuzzy matching%
+        Where it gives the nearest values not the exact match of the value to find the party for ex let's keep party name john technologies but the payment done from the john pvt limited so we use fuzzy matching to match the payment with bank transaction
+    
+    %Bank Gurantee%
+        When the buyer can't pay the payment where they can give the bank gurantee to the supplier or giver so where if buyer fails to pay the giver can claim the gurantee amount from the bank and it also only valids between the some time period and some times the bank also excepts the buyer to pay margin amount for gurantee and can also put the charges for that gurantee amount
+    
+    
 
 

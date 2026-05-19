@@ -290,6 +290,28 @@ mit
     %Bank Gurantee%
         When the buyer can't pay the payment where they can give the bank gurantee to the supplier or giver so where if buyer fails to pay the giver can claim the gurantee amount from the bank and it also only valids between the some time period and some times the bank also excepts the buyer to pay margin amount for gurantee and can also put the charges for that gurantee amount
     
+    %Invoice Discounting%
+        In this where the company gets the loan from the bank by giving the invoices as the gurantee so the bank will pay to the company later the customer pays amount will goes to the bank or even the company can also close the loan and get the money from the customer and it is use by company when they need the money immediately.
     
+    %Payment Request%
+        In the payment request where we send the notification to the customer using email and where we can choose the print format according to that the mail will send to the customer with payment gateway link if we give or we can send the bank account details through mail so the customer can notify for their payments to the company.
+    
+    %Payment order%
+        If the company has the hireachy to pay for the supplier only after the manager approval they will use payment order by aligning all the payment request or entry to be done by the company and send the payment order to the manager for approval by the accountant
+    
+    %Payment Entry%
+        The payment entry is used to note the payment done by the users in the ERP and where we can match that to bank transaction later and also to the sales invoice and we have several payment modes and can also do the internal transfer and can also do the advance payments and later we reconcillate with the sales or purchase invoice
+    
+    %Payment ledger%
+        Where this ledger is used to track the recivable and payable account transactions and which helps to maintain the general ledger and also the fiscal year account of the company by noting the transactions
+    
+    %Payment terms%
+        Like the sales where we also have the payment terms for the particular supplier or group of supplier and where we can also fix the tax and payment schedule using this payment term tool
+    
+    %Semi-Auto Payment Reconciliation%
+        we just want to enable the account settings in master account and where in the process payment reconcillation doctype we give the filters like party name,payable or recivable account and the company the ERP automatically reconcillate the sales or purchase invoice to the payment entry and which will be done by the background job.
+
+    
+
 
 

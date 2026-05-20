@@ -311,6 +311,21 @@ mit
     %Semi-Auto Payment Reconciliation%
         we just want to enable the account settings in master account and where in the process payment reconcillation doctype we give the filters like party name,payable or recivable account and the company the ERP automatically reconcillate the sales or purchase invoice to the payment entry and which will be done by the background job.
 
+    %Journal Entry%
+        Where it is the tool used to make the entry of money movement transaction and where we can choose the accounts and it also have different types of journal entry make difference,debit,credit note etc and where we can also do the payment entry for that journal entry
+    
+    %Journal Entry Template%
+        If we use the one of the the journal entry repeatly then we can give the journal entry template with required account so where we can easily easily amke the journal entry in the future which will saves the time by repeating the same JE.
+    
+    %Inter company Journal Entry%
+        when there is  transfer of money to internal company then we use internal journal entry type to make the transaction between the internal company and where there also we can maintain the accouts to be handled correctly.
+    
+    %GST%
+        GSTR-1 -What I Sold
+        GSTR-2A-What I buy
+        GSTR-2B-What I can claim
+        GSTR-3B-What I should pay as tax
+
     
 
 

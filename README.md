@@ -325,6 +325,25 @@ mit
         GSTR-2A-What I buy
         GSTR-2B-What I can claim
         GSTR-3B-What I should pay as tax
+    
+    %Deferred Expense%
+        It is just opposite to the deferred revenue where in this the company will pay for the future assest or service but it should not immediately affect in the ledger as expense where it still we not recieve it so if we enable the deffered expense where at end of the month where it self creates the journal entry and have a option to save also where it will maintain the ledger by booking expense monthly so there will be no misunderstanding in the accounts calculation
+    
+    %Process Deferred Accounting%
+        It is the list where we can see whether the deferred revenue and deferred expense is entered in GL and journal entry and where by enabling the automatic settings we can make the GL and JE automate or we can make the manual entry to make the entry to the revenue and expense account
+    
+    %Multi Currency%
+        In this where the company can have the many branches and can have customers from other country to so they will maintain the multiple currencies so we should maintain the exchange rates, gain and loss in the journal entry where the multi currency plays a role by maintaing the money value integrity and where we can enable and disable the currencies used by the company
+    
+    %Exchange Rate Revaluvation%
+        Instead of giving the manual rates during the payment where we can set the exchange rate which will automatically update the exchange rate field during the payment and also we can use the api integration to fetch the exhange rates and where we can enable it the account master settings
+    
+    %cost center%
+        where the company can have many branches and diffrent type of platform for that business so to maintan the separate profit and loss where during the purchase and sales invoice so we can maintain the transaction flow separately and can also keep the separate budgeting and also limimt for that cost center so we can plan to take the improvisation steps for that branch according to their performance.
+    
+
+    
+    
 
     
 

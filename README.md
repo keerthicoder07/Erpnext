@@ -341,7 +341,32 @@ mit
     %cost center%
         where the company can have many branches and diffrent type of platform for that business so to maintan the separate profit and loss where during the purchase and sales invoice so we can maintain the transaction flow separately and can also keep the separate budgeting and also limimt for that cost center so we can plan to take the improvisation steps for that branch according to their performance.
     
+    %cost center Allocation%
+        where we can allocate the percentage share to the cost center so where there is expense or income the amount will split according to their share percentage and go to that accounts
+    
+    %Accounting dimensions%
+        This is used to classify the accounts based on the business unit,deparment, region etc where it user creatable and easy to classify each and every document under the particular dimension and also easy to calculate the balance sheet and profit loss sheet and we can also use to apply the filters to the see the indvidual perfomance of the dimensions.
+    
+    %Share Holder%
+        The shareholders are the owners of the company where they posses the shares of company and if there is a profit or loss they gain and lose according to their share percentage and each share has the value and it decides the valuvation rate.
+    
+    %Share transfer%
+        This tool helps to transfer the share to the holder and also it has two type of share type
 
+        share types
+            Equity-Gets the profit amount according to their share percentage if profit grows their income also grows
+            preference-Gets the fixed profit even if there is a profit or loss
+        
+        transfer types
+            Issue-In this company issue the shares first time to the share holders
+            Transfer-In this a share holder transfer their share to another
+            Purchase-In this the company itself buy their share from their share holder
+
+    %Share Reports%
+        In this we have two reports one is the share balance to check the balance of the shareholders and the another is share ledger to see the transactions happened during the share transfers and equity and preference shares
+
+    %Budget%
+        Which is used to set the expense limit for all the accounts of the company if the limit exist we can block the transactions and also can make warning message that the limit exceeds. 
     
     
 

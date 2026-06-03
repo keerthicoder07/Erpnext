@@ -366,7 +366,41 @@ mit
         In this we have two reports one is the share balance to check the balance of the shareholders and the another is share ledger to see the transactions happened during the share transfers and equity and preference shares
 
     %Budget%
-        Which is used to set the expense limit for all the accounts of the company if the limit exist we can block the transactions and also can make warning message that the limit exceeds. 
+        Which is used to set the expense limit for all the accounts of the company if the limit exist we can block the transactions and also can make warning message that the limit exceeds.
+
+    %Budget Revision%
+        This is the tool to change the allocation amount of the budget during the fiscal year due to change of plans.
+
+    %Budget Variance Report%
+        Which shows the budget allocated and the variance the amount remaining for that account so we can see the balance and also which account makes the transaction from the allocated budget
+
+    %Subscription%
+        In this ERP where subscription is available where the company can set the subscription plan to their customer and where they can choose the monthly calender account or they can give interval which will create the invoices based on days,month or year and we can enable the subscription to be cancelled based on the end date of the subscription and they can also cancel in between, it also have the feature to block the invoice if previous due invoice is not cleared and can also generate new invoice since even the customer not pay the due 
+    
+    %Asset%
+        Where we can create and set the assest for the company and where we can also set whether is depriciable or not and also we can set the cwip also for that assest if they are using in future and also they can mark as enable or disable for the things for depreciation.
+    
+    %Purchasing Asset%
+        while creating the item if we fix it as assest and enable the auto creation of assest the when we buy that item using the purchase receipt where it automatically create the assest and save as draft since it is not start to use it will be maintain under cwip
+    
+    %Depreciation%
+        In this where we can fix the depreciation terms like depreciation period,shift and the methods according to the finance book based on the company or based on the income tax and we can maintain the separate expense account to maintain the depreciation expenses and where can also maintain the depreciation in dalily shift rate basis which can calculate depreciation with more accuracy.
+
+    %Asset Maintenance%
+        Where to maintain the asset by doing the preventive maintenance or calibiration to maintain the asset in the good state where we can assing the todo tasks to the asset maintenance team and where it will maintain the log ot know where and when the maintenance is done and it will not affect the GL directly but the maintenance charges book separately
+    
+    %Blanket order%
+        Which is simply the assurance between the company and customer where they agree to buy and sell the products at fixed rate even it changes during the in between period of the blanket order 
+    
+    %Drop Ship%
+        When the company actually not have the stock the customer asked and the customer needs in urgent the company share the shipping details to the retailer or wholesaler who supply the products and they will directly send the products to the customer
+    
+    %warehouse%
+        In this where we mention the warehouses in the item to know where it belongs to like city and territory and used for the shipping and where we can create the warehouse accounts like manufacturing ,raw materials, and finished goods and if we enable the perpetual inventory where we should link the accounts form coa with warehouse to make the GL entries correctly.
+    
+
+
+
     
     
 

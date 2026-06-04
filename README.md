@@ -398,6 +398,31 @@ mit
     %warehouse%
         In this where we mention the warehouses in the item to know where it belongs to like city and territory and used for the shipping and where we can create the warehouse accounts like manufacturing ,raw materials, and finished goods and if we enable the perpetual inventory where we should link the accounts form coa with warehouse to make the GL entries correctly.
     
+    %Item%
+        Where the item is a important doctype in the stock where we create the item to sell and purchase and where we can set the group,hsn code,rate,tax templates,item alternative,valuvation rate,batches,serial no etc where it will be the total packed doctype with many information and where we can disable and enable it for the transaction can set the valuvation and selling rates for it.
+    
+    %Item Alternative%
+        In this where we mention the Item alternative for the items if it not available in the warehouse it is mainly used during the work order and material transfer if the item not available for the manufacturing in the warehouse then we use the alterante item in the work order and during the material transfer.
+    
+    %Item Codification%
+        In the item code when we give the same name of item name sometimes if the item name is longer it is difficult to search and there is a threat to duplicate records to be made so mostly the user should use the item code with series of what product in the first and the color or the properties to be mention for that product and at last the size of the product and the item count no example:TS-R-M-002(T Shirt Red Medium )we can done through the naming series by enbaling it in stock settings 
+    
+    %UOM%
+        It is the default measure term for both purchase and selling and where it also has the conversion factors and where it also has some regulations for the single physical element like laptop or box where they will be mostly in nos should have the conversion factor with whole number and where the kg,pound can have the conversion factor with fractional numbers
+    
+    %Item Group%
+        In this where we can create the parent group and we can keep child group for it and also we can set the default buyer and supplier also for the particular groups and also can set the default accounts for that specific item group and also can set the tax template for that particular item group also so it is easy to segregate and maintain the separate accounting for group of items.
+    
+    %serial no%
+        In this where the serial no identifies the unique item and we can track each and every product from the manufacturing to sales and when we put the material request(stock entry) we assgin the serial no and where we can track whether is active and we can make the serial no entry using the purchase receipt also and if done the delivery note the status of the serial no will change to delivered and if we directly make the serial no entry it will be not use because it will not have any reference to point the physical product so always create the serial no using stock entry or Purchase receipt and we can also mention the warranty details in it.
+    
+    %Batch%
+        where the Batch also similar to the serial no where we can create batch with multiple serial no and where we can also use the sample retention with quantity we can set the automatic branch creation in the item master and also can choose the series and when we sold all the item from that batch change status to empty
+
+
+
+
+    
 
 
 

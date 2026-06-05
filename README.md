@@ -418,6 +418,40 @@ mit
     
     %Batch%
         where the Batch also similar to the serial no where we can create batch with multiple serial no and where we can also use the sample retention with quantity we can set the automatic branch creation in the item master and also can choose the series and when we sold all the item from that batch change status to empty
+    
+    %Batch move/split%
+        where in the batch we can make the stock to be split and put as seaprate new batch and also can move from one batch to another batch if we need it suring any sceanrio
+    
+    %Serial and batch bundle%
+        In this where during the inward and outward entry where if we enable auto create bundle it self creates the serial and batch bundle during the stock entry like material receipt,purchase receipt etc and also during the material issue and delivery note 
+    
+    %Installation note%
+        When the selled the product and it is a setup like product ex:AC then where we can put the installation note when they installed and in which territory also and can easily track the record whether product buy by the customer is assembled or not.
+    
+    %Batch wise balace stock%
+        Where it is the report type we can check the balance of item batch wise so we can easily check the stock which is older and newer and if we choose fifo or lifo in the stock settings will make which stock should go for the selling first and last
+    
+    %Item variant and Item Attribute%
+        Where Item variant is the template we use when the item has variants in it like the attriubutes of colour,size and shape so the we can create variant template for that item and then we can create a single or multiple variant products according to the no of attributes in it so the company can easily segregate and maintain the variant items easily.
+    
+    %Brand%
+        It is the company who get the products from the company for the sale and the company also give the liscence to the brand and we can also mention the brand in the item itself and also in the brand we can mention the default cost center,default warehouse,default purchase and selling terms so the manual work will reduce and it automatically fetches when we click that brand
+    
+    %Item Manufacturer%
+        It is not always the manfacturer and company can be same so we create the manfacturer and assign to the item manufacturer and can give the manfacturer part number for the better tracking which manufacturer produced the item because for the same item there will be multiple manfacturer so the manufacturer part number is important.
+    
+    %Pricing%
+        In this where the user can create multiple price list with different item price according to the territory and countries and where we can use in the sales and purchase flow doctype like sales and purchase order and in the invoices also so it is very easy to maintain the pricing list separately so the user can easily use it instead of the manual entry of the price.
+    
+    %Opening Stock%
+        In opening stock tool is used to make the stock entry for the new fiscal year where the new or the last year stock can be entered here for the next fiscal year here we can make the stock entry for both serialized and non serialized item where we can make the entry through the csv or excel files also where we can mention the serial and batch no there if it is not present in it automatically it creates.
+    
+    %Periodic and perptual Accounting%
+        In these are the two stock accounting in the ERP
+
+        Periodic-In this where only the stock ledger affects and manually we should update the General ledger else the accounting expense will be inccorect and we should manually adjust that in the month end
+
+        Perptual-Where in this both stock GL affect so we not manually handle the expense account and it is also easy for the user to maintain the accounting and inventory easily.
 
 
 

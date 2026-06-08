@@ -452,6 +452,33 @@ mit
         Periodic-In this where only the stock ledger affects and manually we should update the General ledger else the accounting expense will be inccorect and we should manually adjust that in the month end
 
         Perptual-Where in this both stock GL affect so we not manually handle the expense account and it is also easy for the user to maintain the accounting and inventory easily.
+    
+    %Product Bundle%
+        It is the tool used to combine the two or more products and sell as bundle and where the parent item should be the non service item and we can create the actual child items and add as child in the product bundle and where in the sales flow we can see that child items in the packaging list and the basic example is let's take the phone which contains the phone charger and earpods etc so it is the bundle product which is useful during the billing.
+    
+    %Stock reservation Entry%
+        The stock reservation entry is used to reserve the stock by using the sales order for this first we should enable the stock reservation in the stock settings and then in the sales order item we should enable reserve stock and after submitting the sales order we can create the reserve stock entry and if there not suffcient amount of product is in warehouse as they needed in the sales order it will mark as partially reserved to make this happen we should also enable that in the stock settings and where we can also make unreserve and the entry will be automatically cancelled in the stock reservation entry
+    
+    %Pick List%
+        The pick list is a tool where we can get the items required by the company,customer or for the manufacture and where we can make the stock reservation and also can update the ledger by making the reservation and also can create the delivery note if it is the type delivery and can make the purchase receipt if it is in the type of material request
+    
+    %Putaway Rule%
+        This tool is used to allocate the stock to the warehouses correctly as per their capacity holding so during the purchase receipt or material request when we apply the putaway rule as per the priority and free space in the warehouse it allocate the stock if there is no space to fill it will show the error and if there is same qty and same priority then the first rule created will apply and the stock moves to that warehouse.
+    
+    %Warehouse Capacity summary%
+        Which is used to see the capacity of the each warehouse and can edit the capacity also in the warehouse capacity summmary itself
+    
+    %packaging slip%
+        It is the tool which indicates how may packages are present in the delivery note usually we create it from the delivery note and where in that when we give the net weight and package no from and to itslef split the weight and it also has gross weight which will include the net weight plus the packing weight and we can also track for the batched items also
+    
+    %Land cost Voucher%
+        It is used to increase the stock value which happened during the transportation so during in land cost voucher we will book the expense in the freight and forward charges and if we need that to affect in the accounting ledger we can create the purchase invoice and we can link the purchase receipt or purchase invoice and we can only link the purchase invoice if have with the update stock enabled and we can also make the payment entry and can create the purchase invoice with is paid 
+    
+    %shipment%
+        It is used to track the shipment of packages where it is moving around and their statuses whether it is pickup from the company address and whther it is in progress or it delivered to the customer where it will have the refernce of delivery note and shipment note their measurements including weight and where there should be the customer or supplier or to the company there should be a contact person with email and phone no so it is easy to track and where we can also make the shipping automate using the shipping integrations.
+    
+    %shipping rule%
+        Instead of giving the ship charges manually every time we can give the shiipping rule based on the net or total amount and where we can give in the three ranges of price and where the country filters also valid and the shipping amount and the shipping account also will be declared here so we can automate the shipping prices during the selling and buying
 
 
 

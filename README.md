@@ -478,7 +478,44 @@ mit
         It is used to track the shipment of packages where it is moving around and their statuses whether it is pickup from the company address and whther it is in progress or it delivered to the customer where it will have the refernce of delivery note and shipment note their measurements including weight and where there should be the customer or supplier or to the company there should be a contact person with email and phone no so it is easy to track and where we can also make the shipping automate using the shipping integrations.
     
     %shipping rule%
-        Instead of giving the ship charges manually every time we can give the shiipping rule based on the net or total amount and where we can give in the three ranges of price and where the country filters also valid and the shipping amount and the shipping account also will be declared here so we can automate the shipping prices during the selling and buying
+        Instead of giving the ship charges manually every time we can give the shipping rule based on the net or total amount and where we can give in the three ranges of price and where the country filters also valid and the shipping amount and the shipping account also will be declared here so we can automate the shipping prices during the selling and buying
+    
+    %Stock closing Entry%
+        This the tool used to close the stock entry for the particular period yearly,quartely or monthly so when we need the report we can easily fetch and if without stock closing entry lets say we have to take the report of the 5 years of stock movements where it will take from the stock ledger and check all invoices,purchase receipt and delivery note so it make the process slow so where the closing entry act like the reference or snapshot
+    
+    %Disassemble Order%
+        This used to return the good raw materials to the warehouse again where we use the completed or closed work order and there we will create disassemble order and remove the materials in the bad condition and keep the materials in the good condition and make the stock entry with the type as disassemble and we can verify that in the stock ledger
+    
+    %Repack%
+        It is the tool used to make the product to small modules for example lets we have the 50 kg of rice sack but the customer mostly needs the 5kg pack so where we will make the out entry in stock and make the in entry in warehouse as 10 packs of rice by dividing the rice sack so we can easily maintain the stock and sales.
+    
+    %Stock reposting%
+        This tool is used to repost the future posting if there is any changes in the back dated entries and where it mostly run in the background to change and where we have the settings for it we can set the limit time to run the jobs between time and can also set the update based on the item and also it may slow the process since it runs many background jobs so we set the time limit and can also set the day where it can ship the time limit and it is the most important tool to correctly maintain the stock ledger and GL if the perptual inventory is enabled.
+    
+    %STOCK REPORTS%
+    %Stock Ledger%
+        In this where we can see the in and out entries in the stock warehouses can be viewed and also the incoming rate,valuavation rate and also the balance quantity available after the in or out entry
+    
+    %Stock Projected Quantity Report%
+        In this where we can see all the numbers of the stock how much we planned,how much we buy and how much we sale and how much we requested qty,ordered qty reserved qty and reorder quantity all the things in it.
+    
+    %Quick Stock Balance%
+        In this tool where we can quickly check the stock balance their value easily ans where in thiswe can aslo view the stock balance report also.
+    
+    %Stock and Account value comparision%
+        Which will compare the stock value and the account value and its difference and give the report
+    
+    %Stock ledger variance report%
+        Where in this we can find whether there is a mismatch in the stock enteries and the mismatch during the reposting enteries
+    
+    %POS profile%
+        This is the profile where we can assign the particular user,payment mode,and we can also assign to the particular customer so it is not necessary to always give the details manually and if we set the user as default when they login it immediately goes to the pos profile
+    
+    %POS invoice%
+        It is normal like sales invoice but where the customer will pay the money immediately but it will not affect the ledger immediately so to make the entry in GL before making any pos invoices we should open this and after all the invoices and transcations happened it will affect the ledger by closing the pos opening it will make the entry as one for all the pos invoices and where we can see the reserved pos stock in the stock projected qty report we can also use loyalty reedem here in the billing of pos
+    
+    %Manufacturing and its dashboard%
+        The manufacturing in erp is the porcess which contains the several doctypes like BOM,job card,Work order,quality inspection and where it has the dash board with visual representation where it represent the data like how many manufacture done in a period how many work order pending completed and how many work order are waiting for the quality inspection and the analysis of work and quality and all so it is more useful to track the manufacturing products
 
 
 

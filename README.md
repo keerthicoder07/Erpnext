@@ -516,6 +516,50 @@ mit
     
     %Manufacturing and its dashboard%
         The manufacturing in erp is the porcess which contains the several doctypes like BOM,job card,Work order,quality inspection and where it has the dash board with visual representation where it represent the data like how many manufacture done in a period how many work order pending completed and how many work order are waiting for the quality inspection and the analysis of work and quality and all so it is more useful to track the manufacturing products
+    
+    %Workstation%
+        It is the doctype which represent the work place to make the job done and where during the operation we can assign this workstation where the operation to be done and it also can contain working hours,holiday list and also the declaration of cost for the workstation to the operation to be done
+    
+    %Operation%
+        In this we can metion the what job to be done and where we can also mention the sub operations and also mention the quality inspection time and where it automatically fetches during the quality inspection and will make the description of the operation
+    
+    %Routing%
+        It is the doctype we can refer in the BOM which contains what operation to be done for that BOM and can mention the operations its cost,time and hourly rate so we cut the manual working by choosing the operations in the BOM each time so if we choose the routing template it automatically fetches the details
+    
+    %BOM%
+        BOM is the most important feature in the manufacturing which is use to mention the required raw materials and also the operation to be done can be mentioned here and where it will calculate the price of both raw materials and operating cost and from the bom we can create the workorder to done the opearations
+    
+    %Work order%
+        This is the doctype helps to notify that work to be done for the manufacture where it can be created from the production plan or the BOM and from the workorder we can make the material transfer first which required for the production and then for Work order we can create the job card and after the work done we can finish it and create the stock entry for the completed product and in this we can choose the source warehouses and target warehouses
+    
+    %Job card%
+        Which can be created from the work order and can assign the job to the particular employee or a group of employee and can start,close and make the job finish and it contains the work stations and can mention the scrap items and the warehouse to store the scrap item where it also contains the scheduled log time to see the progress of the job
+    
+    %production plan%
+        In this where we can make the production plan based on the sales order or the material request and can get the raw materials and bom and can make the work order from the plan and it basically contains of two type if it is the customer asked production we creatre with sales order and if it is the internal requirement of the company then we will create with type material request.
+    
+    %plant floor%
+        This the doctype where we can visualize the job card and also the machines in the work station and can also add or move the stock in the stock summary for the production or maintenace and we can assign the plant floor to the workstation in the workstation doctype.
+    
+    %Capacity planing%
+        It is the tool we used to the make the capacity planning for the work station so we can maintain the work orders efficiently and we should enable the capacity planning in the manufacturing days and where we can enable the allow overtime allocation and also allocation during the holidays we can also fix the production capacity how many job can occur at same time in workstation
+    
+    %Down time Entry%
+        This should be create by the user manaually when the machine is under maitanence or repair or not working in the proper condition then we use the down time entry
+    
+    %Downtime Analysis%
+        By using this report where we can make analysis which machine is performing poor and it also has the visual analysis
+    
+    %Tracking semifinished goods%
+        In this where in v15 we create multiple boms to track the subassemblies and to make the process easier in v15 where they create single BOM and can track all the semi finshed goods from that single BOM itself so we don't need the multiple BOMS
+    
+    %MRP(Material Requirements planning)
+        It is the tool which helps to plan the production by creating the demand and then by using the analysis they will make report when to increase and decrease the manufacturing by using sales forecast and always it check the internal requirement and also the external and makes the delivery schdeule perfectly and plan the production according to that so it is most important tool in the manufacturing
+    
+
+
+    
+
 
 
 

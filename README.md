@@ -553,25 +553,64 @@ mit
     %Tracking semifinished goods%
         In this where in v15 we create multiple boms to track the subassemblies and to make the process easier in v15 where they create single BOM and can track all the semi finshed goods from that single BOM itself so we don't need the multiple BOMS
     
-    %MRP(Material Requirements planning)
+    %MRP(Material Requirements planning)%
         It is the tool which helps to plan the production by creating the demand and then by using the analysis they will make report when to increase and decrease the manufacturing by using sales forecast and always it check the internal requirement and also the external and makes the delivery schdeule perfectly and plan the production according to that so it is most important tool in the manufacturing
     
+    %Work Order Summary%
+        Provides a summary of all Work Orders created for manufacturing. It helps track the status of production orders such as Draft, Submitted, In Process, Completed, or Cancelled. Managers use this report to monitor overall production progress and pending work.
+
+    %BOM Search%
+        Helps users quickly find Bills of Materials (BOMs) for specific items. It shows BOM details, status, and versions available for a product. This report is useful when multiple BOMs exist for the same item.
+
+    %BOM Stock Report%
+        Displays the availability of raw materials required for a BOM. It helps identify shortages before starting production and ensures sufficient stock is available for manufacturing.
+
+    %BOM Explorer%
+        Provides a hierarchical view of BOMs and sub-assemblies. Users can analyze the complete product structure, including raw materials and intermediate products, making it easier to understand manufacturing dependencies.
+
+    %BOM Operations Time%
+        Shows the estimated operation time required for manufacturing items based on BOM operations. It helps in capacity planning, production scheduling, and identifying time-consuming operations.
+
+    %Production Planning Report%
+        Analyzes production requirements based on demand and available resources. It helps manufacturers plan production quantities, allocate resources efficiently, and avoid stock shortages or overproduction.
+
+    %Production Analytics%
+        Provides insights into manufacturing performance using key production metrics. It helps management evaluate productivity, production efficiency, completed quantities, and manufacturing trends.
+
+    %Downtime Analysis%
+        Tracks machine or workstation downtime during production. It helps identify reasons for production delays, measure lost production time, and improve overall equipment efficiency.
+
+    %Work Order Consumed Materials%
+        Shows the actual raw materials consumed against each Work Order. It helps compare planned versus actual consumption and identify material wastage or excess usage.
+
+    %Issued Items Against Work Order%
+        Displays all materials issued for specific Work Orders. It helps track material movement from stores to production and ensures proper inventory control during manufacturing.
+
+    %Returned Materials Against Work Order%
+        Tracks materials returned from production back to inventory. It helps manage unused or excess materials and improves stock accuracy.
+
+    %BOM Stock Analysis%
+        Analyzes the stock availability of BOM components and highlights shortages. It helps planners determine whether current inventory can fulfill production requirements before creating Work Orders.
+
+    %Forecasting Using Exponential Smoothing%
+        Uses historical demand data to predict future product demand. It helps manufacturers create accurate production plans, maintain optimal inventory levels, and improve demand forecasting accuracy.
+        
 
 
-    
+        
 
 
 
 
 
-    
+        
 
 
 
-    
-    
+        
+        
 
-    
+        
 
 
 

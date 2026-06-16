@@ -594,6 +594,37 @@ mit
 
     %Forecasting Using Exponential Smoothing%
         Uses historical demand data to predict future product demand. It helps manufacturers create accurate production plans, maintain optimal inventory levels, and improve demand forecasting accuracy.
+    
+    %Subcontracting%
+        It is the process where the company supplies the raw materials and outsurce the manufacturing process and then get the finished item form the subcontractor for this the item must be the non-stock item 
+    
+    %subcontracting inward%
+        In this where the company will acts as the subcontracter and get the manufacturing materials from the customer and sale the the finished good to them with operation cost.
+    
+    %Project%
+        Where in this doctype we first create the project according to the customer's sales order and we can assign the users for that project and can send the email about the task and in this we can assign the tasks to the particular user and where the user will put their progress using the timesheet and where the customer can verify it and after completing the task we should change their status to the completed and once all the tasks in the project are completed their status automatically change to completed and where we can set the start and expected end date for the project.
+    
+    %Project Type%
+        Where in the project type we can create various types especially like manufacturing,assembling projects like that and where in default we have two options internal and external and we can also create our own according to the user convenient.
+    
+    %Timesheet%
+        where we can update the job done by the user and can link the task and also can use the timer and after complete the job where it automatically takes the time or we can manually update the time and also we can link this time sheet in the tasks and from this we can create the sales invoice for billing and with HR integration we can also generate the salary slip
+    
+    %CRM%
+        Where this module is used to handle the relationship with customers in this we can manage the lead,oppturnities,and the meetings with customers,can also manage the quotation and sales orders we can also see the reports and analysis of progress in this CRM module for the quotation and sales
+    
+    %Lead Source%
+        This is the tool used to store the source by how the customer knows our company simple by refering or marketing for example linked in where we do pay for it then during the new account creation of the customer we can ask how do you know our company by using it we can come to know whether the lead source is useful or not
+    
+    %sales stage%
+        In the sales where we have several stages so this doctype is used to indicate that like sales person explained the products and in the meeting progress for the quotation,negotiation at last win or lose.
+    
+    %oppturnity type%
+        where in this the people can have the interest to the compnay by interacting for the various reasons like to apply for career,sales,maitenance and support so we can use this doctype to save these types and use during the lead details filling what oppurinity they need for seeking
+    
+    
+    
+
         
 
 

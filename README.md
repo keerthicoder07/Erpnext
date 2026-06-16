@@ -43,3 +43,605 @@ mit
 
 %Introduction%
     The ERP next is a open source which used to build app for all the comapnies form small scale to large scale for their enterprise maitainance including accouting,crm etc and since it is the open source where any one can use to build their app and can deploy in the frappe cloud or any other cloud platform so it is easy to maintain for the users and have their own flexibility and customizations.
+
+%company doctype%
+    Where it contains the company details and where we can also manage group of company if client have and they can easily manage it
+
+    %COA%
+    In this they can also maintain all their company accounts as one by merging it and they can have COA by the standards or buy cutomizing it they can also take the structure COA from other company template and if the company is child or sister company the parent company COA will apply to it
+
+    %Default%
+    In this we can set the default of the company like letter head etc
+
+    %Accounts%
+    In this we can set banck accounts for each every transaction for example for employee they can maintain in one bank account and for suppliers a separate account and for the payables separate account like that so they can manage the accounts separately and easy to maintain accounts and cash flow
+
+    %Bank Remittance Settings%
+    In this where they can make multiple transactions in the single flow and not to have separate flow for each and every bank transactions
+
+    %Exception Budget approver%
+    Who have the access to approve the expense that exceeds the default budget and only that person can approve the expense that exceeds.
+
+    %Delete%
+    In this where the owner or the administrator can clear all the transactions and invoices of the company but it should be done cautios because once it is deleted then it cannot be retrived
+
+    %System Settings%
+    In this where we can set the default like language,time and country then where we can set the session settings and login methods,then default email settings of the company and the uploading of the files, they can also disable the notifications,they can also set the default backups and control the backgroud jobs and can reduce their usage by restricting to run once in a day
+
+    %Global defaults%
+    In this where we can set the defaults values like company name,currency and coutry etc
+
+    %Domain settings%
+    By using this we can disable the domain that should be disable and user cannot use it
+
+    %Set settings%
+    In this where we can set the language for particular user
+    In precison where we can set precision for the particular user
+    In show or hide modules we can access in the ERP home page but it is depreceated in from V15
+
+    %Data Import%
+    This is the important feature let assume the customer wants to upload their old of 500 data we cannot do the manual entry so we use the excel,csv or google sheets to upload the bulk data  so where we have two options first the insert new records and next is update the existing data 
+
+    * First we should download the template by choosing the doctype with the needed fields then we can easily do the changes or enter the data
+    *second we should not give the duplicate data then it shows duplicate data error and we should not change the field name after we create the data import document then also it shows error 
+    *third where we can import the files from local,library or from the google sheets and where if it is google sheets we dont want to import the always the file from local and where if we use the google sheets we should keep the public access for that file and we should only copy and give the url tab link
+    *If any error it will throw the error in each row if not it will add that data 
+    *During the update of record we cannot change the id of any record
+    * we should not also give large data like 50000 so we split and add the data
+
+    %Chart Of Accounts Importer%
+    Where we can import the structure of chart accounts using this tool before making any transactions where we can download the template and can edit according to the user and can import that for the change of structure and if it is the child company then parent company should give the permission to chnage the structure else the same parent's coa itself apply for that company also
+
+    %Export%
+    In this we have the export tool where we can export the data as csv or excel and even we can filter out the data we needed and the second option is download the backups of db where by default it saves every 8 hours and we can set number to take backups to download at the time and even we have the facility to take the backups from cloud and we can also send the download link files in the email including the public and private and we can also encrypt the backups to make more safe
+
+    %Bulk Operations%
+    Bulk update
+        where we can bulkly update the particular field of the doctype instead we manually changes every thing and we can also set how many records to update at the time 
+    Bulk rename
+        where it is used to rename the id of the documents where it is only applicable to non-core doctypes we cannot change the id for core doctypes
+    Delete company transactions
+        where using this tool we can delete company transactions like doctypes and records and where it is irreversible so we should handle it more carefully and only the owner and administrator have that access to delete it
+    
+    %Personal Data%
+        where using this tool we can dowload the personal data as json file using request data url and can see the request record in personal data download request as same we can also request the delete account using the request delete and can delete the personal data account by verfying through email or in by showing the link in the website for that particular user
+    
+    %user permissions%
+        Where we can manage the customers,employee and all other members who involve in this company and we can set the permissions also based on the role,document,and field also so we can maintain the data securely and also we set the user permissions and can choose the doctype to the users to access that alone and can also in advanced we can set the value based permission also so we can manage best user management
+    
+    %Role permssions%
+        Here I learned hoe to keep the read write permissions to the particular users and learn how to keep the perm levels and learnt about the perm level errors where we should fix the system manager level as 0 or remove the perm level 1 or 2 for that user and learnt about maxiumu user limit based on subscription
+    
+    %Open invoice creation tool%
+        Let's keep scenario when a customer comes new to the ERP they have unclose invoices which is used to maintain the accounting and ledger so to import that bulk data we use open invoice creation tool and where we can create new supplier or customer using the create missing party where it automatically add in the supplier table or customer table 
+    
+    %period closing voucher%
+        Where it is used to close the fiscal year expenses of that company which is used to calculate the profit and losses and completely close that year accounts and if any payable or recivables is pending where during the audit they can create another period closing voucher and can make a journal entry to add that expense or income to the same fiscal year
+    
+    %Accounting Period%
+        Where the accounting period is used to create the fiscal year where after that period we cannot create any sales or purchase orders which will block because to maintain the audit intergrity and where we cannot create the journal entry also if the period is closed
+
+    %Fiscal Year%
+        Where the fiscal year is similar to the financial year where it can be even fix as default and also can set less or more than 12 months and we can mention the companies which will come under that fiscal year
+    
+    %Mode of payment%
+        where we can set the mode of payment for each company to maintain the point of sales(pos) and where we can create the mode of payment and can use it during the payment entry
+    
+    %Payment Term Templates%
+        where it hepls during the payment request where we can set the payment template first to get the advance and next after the completion of shipping or job we can transfer the remaining 70 % of money so it is easy to maintain the payments
+    
+    %Sales Taxes and Charge Template%
+        This is the template where we can define the tax and charge template for the sales in this we have 5 types of tax they are
+            actual-fix amount
+            on previous row amount-where it includes only the tax amount of the reference row
+            on prevoius row total-where it includes tax amount for that whole total
+            on net amount-where it will apply the tax on net total
+            on item quantity-where it will apply the tax on each and every item 
+        
+        where we can also keep the item tax template for the particular item even if the default is applied it overrides where we can see in the tax breakup
+    
+    %Purchase Taxes and Charge Template%
+        Where it also follows the same tax engine but where it apply to suppliers instead of customers
+    
+    %Tax Rule%
+        Instead of selecting the the tax category manually for each and every customer during the sales order or sales invoice where we can define rules where it will automatically set so there will be no human error and where we should only maintain the either rule or tax template for each item else where it will creates the duplicate tax entry
+    
+    %Tax category%
+        This can be set in the rule and tax template to choose the tax according to the state and nations for example for state it applies the sgst+cgst and if it is between the inter states there separate category will applies so it helps to mainitain the tax for varsius scenario and where we can even set that in the account master to apply by default
+    
+    %Tax Template%
+        where for each customer we can fix the separate the tax template what type of taxes should be apply and where we can also fix that for both suppliers and customers according to sales and purchase and it also easy to mainitain the tax for each and every customers and suppliers
+    
+    %Item Tax Template%
+        In this template where some items or group of items will have the separate tax for them so to exclude that from standard tax we sue this template even if the default is apply for that invoice or order where it will override that apply the item tax template rate to that particular product
+    
+    %Tax witholding template%
+        Where durting the sales or purchase payments if any tds or tcs is applied it also adds or deducts in the grand total and reflects as three ledger entry in account ledger one as debit or credit of accounts and the tds debit or credit so it easy to maintain the goverment taxes 
+    
+    %TCS%
+        For this where we can only apply with cumulative threshold and we assign to the customer and where it automatically saves
+    
+    %Lower Deduction Certificate%
+        Where this apply when some suppliers have comes under some scheme and the normal tax not applied then we use the lower deduction certificate where if normal tax has 5% and by using it we can have 1% for that particular supplier
+    
+    %Tax applies on Total or valuvation%
+        where it is mainly used in maintaining the balance on the accounts of inventory if it is the total where it just affects the supplier payable like the tax of gst,vat etc and the valuvation just increase the stock like we use internal transportation and where if both gst and transportation done by the supplier both the total and valuvation increases
+    
+    %Tax Inclusive Accounting%
+        where some items will billed including the tax for that items where we can just tick the enable checkbox includes in the basic rate and where we can set it in the sales tax and charges template
+    
+    %Serial and bundle%
+        where every item should have the physical serial no to identify unique and bundle no for every transaction so it is easy to maintain the stock and helpful to stock restore and to generate the purchase reciept and also it automatically creates the bundle no for inward and outward entry and to update the serial and batch no manually we can import using the csv or excel
+    
+    %Stock Reconciliation%
+        where it is used to make the entry and for counting the stock in the warehouse where we can alos maintain the opening stock and remaining stock updates which used to purchase the items that are in the low stock
+    
+    %Opening Balance Account%
+        where after the end of fiscal year the company may have the bank balance and liabilities so to maintain that where we create the account temporary opening ans add the assests in debit and liabilities to the credit to their respective accounts and where atlast the balance must be zero because where to know where from the source comes and where it goes so it is easy to transfer the bank balances and liabilites to be pay during the new fiscal year
+    
+    %Multi currency Accounting%
+        In this where we can set the party currency to their bank accounts currency anad where the transaction can be only make if the company also have the default account in that currency and also where we should always be careful before making any transactions because that only affects in the report ledger so always ensure the currency before transactions or it will create inefficiency in the report generation
+    
+    %Balance Sheet Accounts%
+        In this where we can generate the report and check whether the assests and liabilities are equal by ensuring whether the balance sheet has zero balance during the end and start of the year to transfer the balance details in each and every account to maintain the proper accout details without any conflicts.
+    
+    %Profit and Loss Accounts%
+        In this where it will maintain the income and expenses account and it will give how much profit or loss we attained and generate the report for us and the if we get the profit where that money will be credited to the account of the equity or capital using opening entry using the temporary opening account so the profit and loss reset to zero at every start of the year
+    
+    %Groups and Ledgers%
+        where the groups are just heads where they can have the chidren but cannot make the transactions but ledgers are the child of group where they can record the transactions so in COA we have the four groups assests,income,expenses,liabilities and where each group have their ledgers to make the transactions
+    
+    %sales Invoice%
+        where the sales invoice plays a major role in the erp where it have several options lets see all that
+
+        FLOW
+        first we create the sales order to get the confirmation of the customer approval
+        second we create the delivery note to update the stock and it is also skipable if it is direct sale
+        third we create the sales invoice and where we can use many functionalities here
+
+            *We can use the pos profile for the billing terms for the particular customers or products
+            *payment terms -where we can set here or the default for the customers in masters account
+            *We can get the invoice discounting using this sales invoice
+            *we can create the credit note if there is any return of product
+            *we can make the immediate pos payment
+            *we can mention the shipping and customer details 
+            *we can add the campaign and sources for the marketing purposes
+            *Rate adjustment entry if any changes in the previous invoice
+            *we can apply the additional discount as grand total or net total
+            *we can also update the stock without delivery note
+            *we can add the subscrription invoice if it is
+            *We can add the loyalty program and reedem points 
+            *Where we can add the timesheets like hour billing for employee based on the timesheet
+    %Credit Note%
+        When a customer need the refund for the product by returning it we use the credit note where it creates the credit note for the customer and where we can update the stock also and in the ledger also we can see that where the payment can be done and also can reduce the amount in the future invoices for that customer
+    
+    %Payment Recoincillation%
+        when the company decides to reduce the amount from the future invoice bill where we will create the recoincillation and it directly make changes in the outstanding field by reducing the outstanding  amount in the invocie which will be balanced in the general ledger also.
+    
+    %Dunning%
+        The dunning is the tool where we can get the interest for the overdue invoices so we can also have the templates and notice for that like first and second notice in first notice we can just give the warning where in next notice we can put the interest rate for the invoice
+    
+    %General Ledger%
+        In the general ledger where all the entries will be recorded with debit and credit and where it is based on the general ledger table and it also record the what type of transaction,voucher and records the bank account that invloves in the transaction and where we can apply the various filters 
+    
+    %Trial Balance%
+        Where in the trial balance report we can see the balance of all account during the time period where opening dr is the amount own by company before the starting date and opening credtors also the how many credits the company owns and the debit and credit are the in between transactions by the company during that time period and closing debtors and credtors are the money that owns and to payable by the company upto that time period
+    
+    %Balance Sheet%
+        where in this we can see the assest balance,liability and the equity balance for the fiscal year and we can see for the previous fiscal years also we can choose any currency to check the balances and also can apply many filters in it.
+    
+    %Cash Flow%
+        In this report we can see the how much cash come in and goes during the fiscal year and we can also ensure the liquidity of the company
+    
+    %Profit loss statement%
+        In this report also where we can see the total income and the total expense and by calculating the difference between it and gives the how much profit or a loss the company gains for that fiscal year
+    
+    %Consolidated financial report%
+        In this report where we can see all the balance sheet,profit and loss statement,cash flow of all the internal or child company of the parent company so where the cutomer can get the overall profil/loss or balance data of the whole enterprise to see over all performance of the company financially
+    
+    %Deffered Revenue%
+        In this report we can see the subscrption split amounts that is sending to the deffered revenue account from the income account and we can see the visual and ledger report how it works and where it helps to maintain the monthly record where the deffered revunue gets debit and in the income account there will be credit so we can generate the yearly report correctly.
+    
+    %Payment Term Status Report%
+        Where it is used to check the payemnt status of the sales invoice with its terms whether it is the advance or full payment so helps to check the paid and unpaid easily
+    
+    %Purchase order%
+        Where by using the material request we can get the items need for the company and can wait for the official approval if there any changes we can change here and after submitting where we can create the purchase receipt 
+    
+    %Purchase Receipt%
+        In this where we can confirm that the order is recieved and where it make the general ledger entry where in the stock in hands it debits the amount and in the stock recieved but not recieved it will make the credit and after the submitting the receipt where we can generate the purchase invoice 
+    
+    %purchase invoice%
+        In this where we can make the bill for the purchase receipt where we also have the options to hold the invoice for specific reasons and can also hold indefinitely or can choose the release date when we submit the purchase invoice in the stock ledger where the  stock received but not billed will get the debit and credit goes to accounts payable(credtors) and atlast when we pay the bill for that invoice then credtors will be debit and where the credit goes to the paid account of the company and the complete flow is
+
+        example invoice amount(1000)
+
+                                        Debit                                   Credit
+        purchase receipt --->           1000(stock in hands)                    1000(stock received but not billed)
+
+        purchase invoice --->           1000(stock received but not billed)     1000(Account payable(credtors))
+
+        After Payment    --->           1000(credtors)                          1000(Bank account that paid from company(Sample ERP-canara))
+    
+    %Provisional Allotment Account%
+        where we create the account for the non stock items to create the purchase invoice for the service we used not the stock we should use this provisional allotment account for the transaction and where for that we can create purchase receipt and purchase invoice before that where we should set the default account and enable in the company master settings
+    
+    %Debit Note%
+        In this when a buyer wants to return the product to the supplier they will create the debit note and where it will make the credit form stock recieved but not billed and after the payment where the assests get the money from the credtors and it is the debit note which reverses the purchase flow to get back the money from the supplier
+    
+    %Bank%
+        In this where we can create the bank and give the name to it and where after that we can do the reconcilation with invoice and payment entry by importing data configuration the bank transactions as per the field in the ERPnext.
+    
+    %Bank Account%
+        In this we can create the bank accounts and can choose whether it is a company account or a default account and if the bank supports the plaid integration we can just choose the date to synchronize the transactions and after where we can recoincile them with payment transactions
+    
+    %Bank Transaction%
+        In this where the bank account should properly link with COA account of the company and where this tool is used to maintain the bank transactions and where we can also make entry using the bank statement import and which helps to make a bulk entry
+    
+    %Bank Reconcillation%
+        In this where we can reconcillate the payment entry and bank transaction which are unreconcile and can link them and here we have several filters to apply where we can link through payment,journal entry and sales invoice,purchase invoice and using the exact amount and where we can also filter using the reference date
+    
+    %Auto Reconcile%
+        Where it automatically matches the match against voucher and make the link between the transaction and payment entry but it should be match correctly with the bank account and it is not much efficient because it matches using the code logic not the AI
+    
+    %Fuzzy matching%
+        Where it gives the nearest values not the exact match of the value to find the party for ex let's keep party name john technologies but the payment done from the john pvt limited so we use fuzzy matching to match the payment with bank transaction
+    
+    %Bank Gurantee%
+        When the buyer can't pay the payment where they can give the bank gurantee to the supplier or giver so where if buyer fails to pay the giver can claim the gurantee amount from the bank and it also only valids between the some time period and some times the bank also excepts the buyer to pay margin amount for gurantee and can also put the charges for that gurantee amount
+    
+    %Invoice Discounting%
+        In this where the company gets the loan from the bank by giving the invoices as the gurantee so the bank will pay to the company later the customer pays amount will goes to the bank or even the company can also close the loan and get the money from the customer and it is use by company when they need the money immediately.
+    
+    %Payment Request%
+        In the payment request where we send the notification to the customer using email and where we can choose the print format according to that the mail will send to the customer with payment gateway link if we give or we can send the bank account details through mail so the customer can notify for their payments to the company.
+    
+    %Payment order%
+        If the company has the hireachy to pay for the supplier only after the manager approval they will use payment order by aligning all the payment request or entry to be done by the company and send the payment order to the manager for approval by the accountant
+    
+    %Payment Entry%
+        The payment entry is used to note the payment done by the users in the ERP and where we can match that to bank transaction later and also to the sales invoice and we have several payment modes and can also do the internal transfer and can also do the advance payments and later we reconcillate with the sales or purchase invoice
+    
+    %Payment ledger%
+        Where this ledger is used to track the recivable and payable account transactions and which helps to maintain the general ledger and also the fiscal year account of the company by noting the transactions
+    
+    %Payment terms%
+        Like the sales where we also have the payment terms for the particular supplier or group of supplier and where we can also fix the tax and payment schedule using this payment term tool
+    
+    %Semi-Auto Payment Reconciliation%
+        we just want to enable the account settings in master account and where in the process payment reconcillation doctype we give the filters like party name,payable or recivable account and the company the ERP automatically reconcillate the sales or purchase invoice to the payment entry and which will be done by the background job.
+
+    %Journal Entry%
+        Where it is the tool used to make the entry of money movement transaction and where we can choose the accounts and it also have different types of journal entry make difference,debit,credit note etc and where we can also do the payment entry for that journal entry
+    
+    %Journal Entry Template%
+        If we use the one of the the journal entry repeatly then we can give the journal entry template with required account so where we can easily easily amke the journal entry in the future which will saves the time by repeating the same JE.
+    
+    %Inter company Journal Entry%
+        when there is  transfer of money to internal company then we use internal journal entry type to make the transaction between the internal company and where there also we can maintain the accouts to be handled correctly.
+    
+    %GST%
+        GSTR-1 -What I Sold
+        GSTR-2A-What I buy
+        GSTR-2B-What I can claim
+        GSTR-3B-What I should pay as tax
+    
+    %Deferred Expense%
+        It is just opposite to the deferred revenue where in this the company will pay for the future assest or service but it should not immediately affect in the ledger as expense where it still we not recieve it so if we enable the deffered expense where at end of the month where it self creates the journal entry and have a option to save also where it will maintain the ledger by booking expense monthly so there will be no misunderstanding in the accounts calculation
+    
+    %Process Deferred Accounting%
+        It is the list where we can see whether the deferred revenue and deferred expense is entered in GL and journal entry and where by enabling the automatic settings we can make the GL and JE automate or we can make the manual entry to make the entry to the revenue and expense account
+    
+    %Multi Currency%
+        In this where the company can have the many branches and can have customers from other country to so they will maintain the multiple currencies so we should maintain the exchange rates, gain and loss in the journal entry where the multi currency plays a role by maintaing the money value integrity and where we can enable and disable the currencies used by the company
+    
+    %Exchange Rate Revaluvation%
+        Instead of giving the manual rates during the payment where we can set the exchange rate which will automatically update the exchange rate field during the payment and also we can use the api integration to fetch the exhange rates and where we can enable it the account master settings
+    
+    %cost center%
+        where the company can have many branches and diffrent type of platform for that business so to maintan the separate profit and loss where during the purchase and sales invoice so we can maintain the transaction flow separately and can also keep the separate budgeting and also limimt for that cost center so we can plan to take the improvisation steps for that branch according to their performance.
+    
+    %cost center Allocation%
+        where we can allocate the percentage share to the cost center so where there is expense or income the amount will split according to their share percentage and go to that accounts
+    
+    %Accounting dimensions%
+        This is used to classify the accounts based on the business unit,deparment, region etc where it user creatable and easy to classify each and every document under the particular dimension and also easy to calculate the balance sheet and profit loss sheet and we can also use to apply the filters to the see the indvidual perfomance of the dimensions.
+    
+    %Share Holder%
+        The shareholders are the owners of the company where they posses the shares of company and if there is a profit or loss they gain and lose according to their share percentage and each share has the value and it decides the valuvation rate.
+    
+    %Share transfer%
+        This tool helps to transfer the share to the holder and also it has two type of share type
+
+        share types
+            Equity-Gets the profit amount according to their share percentage if profit grows their income also grows
+            preference-Gets the fixed profit even if there is a profit or loss
+        
+        transfer types
+            Issue-In this company issue the shares first time to the share holders
+            Transfer-In this a share holder transfer their share to another
+            Purchase-In this the company itself buy their share from their share holder
+
+    %Share Reports%
+        In this we have two reports one is the share balance to check the balance of the shareholders and the another is share ledger to see the transactions happened during the share transfers and equity and preference shares
+
+    %Budget%
+        Which is used to set the expense limit for all the accounts of the company if the limit exist we can block the transactions and also can make warning message that the limit exceeds.
+
+    %Budget Revision%
+        This is the tool to change the allocation amount of the budget during the fiscal year due to change of plans.
+
+    %Budget Variance Report%
+        Which shows the budget allocated and the variance the amount remaining for that account so we can see the balance and also which account makes the transaction from the allocated budget
+
+    %Subscription%
+        In this ERP where subscription is available where the company can set the subscription plan to their customer and where they can choose the monthly calender account or they can give interval which will create the invoices based on days,month or year and we can enable the subscription to be cancelled based on the end date of the subscription and they can also cancel in between, it also have the feature to block the invoice if previous due invoice is not cleared and can also generate new invoice since even the customer not pay the due 
+    
+    %Asset%
+        Where we can create and set the assest for the company and where we can also set whether is depriciable or not and also we can set the cwip also for that assest if they are using in future and also they can mark as enable or disable for the things for depreciation.
+    
+    %Purchasing Asset%
+        while creating the item if we fix it as assest and enable the auto creation of assest the when we buy that item using the purchase receipt where it automatically create the assest and save as draft since it is not start to use it will be maintain under cwip
+    
+    %Depreciation%
+        In this where we can fix the depreciation terms like depreciation period,shift and the methods according to the finance book based on the company or based on the income tax and we can maintain the separate expense account to maintain the depreciation expenses and where can also maintain the depreciation in dalily shift rate basis which can calculate depreciation with more accuracy.
+
+    %Asset Maintenance%
+        Where to maintain the asset by doing the preventive maintenance or calibiration to maintain the asset in the good state where we can assing the todo tasks to the asset maintenance team and where it will maintain the log ot know where and when the maintenance is done and it will not affect the GL directly but the maintenance charges book separately
+    
+    %Blanket order%
+        Which is simply the assurance between the company and customer where they agree to buy and sell the products at fixed rate even it changes during the in between period of the blanket order 
+    
+    %Drop Ship%
+        When the company actually not have the stock the customer asked and the customer needs in urgent the company share the shipping details to the retailer or wholesaler who supply the products and they will directly send the products to the customer
+    
+    %warehouse%
+        In this where we mention the warehouses in the item to know where it belongs to like city and territory and used for the shipping and where we can create the warehouse accounts like manufacturing ,raw materials, and finished goods and if we enable the perpetual inventory where we should link the accounts form coa with warehouse to make the GL entries correctly.
+    
+    %Item%
+        Where the item is a important doctype in the stock where we create the item to sell and purchase and where we can set the group,hsn code,rate,tax templates,item alternative,valuvation rate,batches,serial no etc where it will be the total packed doctype with many information and where we can disable and enable it for the transaction can set the valuvation and selling rates for it.
+    
+    %Item Alternative%
+        In this where we mention the Item alternative for the items if it not available in the warehouse it is mainly used during the work order and material transfer if the item not available for the manufacturing in the warehouse then we use the alterante item in the work order and during the material transfer.
+    
+    %Item Codification%
+        In the item code when we give the same name of item name sometimes if the item name is longer it is difficult to search and there is a threat to duplicate records to be made so mostly the user should use the item code with series of what product in the first and the color or the properties to be mention for that product and at last the size of the product and the item count no example:TS-R-M-002(T Shirt Red Medium )we can done through the naming series by enbaling it in stock settings 
+    
+    %UOM%
+        It is the default measure term for both purchase and selling and where it also has the conversion factors and where it also has some regulations for the single physical element like laptop or box where they will be mostly in nos should have the conversion factor with whole number and where the kg,pound can have the conversion factor with fractional numbers
+    
+    %Item Group%
+        In this where we can create the parent group and we can keep child group for it and also we can set the default buyer and supplier also for the particular groups and also can set the default accounts for that specific item group and also can set the tax template for that particular item group also so it is easy to segregate and maintain the separate accounting for group of items.
+    
+    %serial no%
+        In this where the serial no identifies the unique item and we can track each and every product from the manufacturing to sales and when we put the material request(stock entry) we assgin the serial no and where we can track whether is active and we can make the serial no entry using the purchase receipt also and if done the delivery note the status of the serial no will change to delivered and if we directly make the serial no entry it will be not use because it will not have any reference to point the physical product so always create the serial no using stock entry or Purchase receipt and we can also mention the warranty details in it.
+    
+    %Batch%
+        where the Batch also similar to the serial no where we can create batch with multiple serial no and where we can also use the sample retention with quantity we can set the automatic branch creation in the item master and also can choose the series and when we sold all the item from that batch change status to empty
+    
+    %Batch move/split%
+        where in the batch we can make the stock to be split and put as seaprate new batch and also can move from one batch to another batch if we need it suring any sceanrio
+    
+    %Serial and batch bundle%
+        In this where during the inward and outward entry where if we enable auto create bundle it self creates the serial and batch bundle during the stock entry like material receipt,purchase receipt etc and also during the material issue and delivery note 
+    
+    %Installation note%
+        When the selled the product and it is a setup like product ex:AC then where we can put the installation note when they installed and in which territory also and can easily track the record whether product buy by the customer is assembled or not.
+    
+    %Batch wise balace stock%
+        Where it is the report type we can check the balance of item batch wise so we can easily check the stock which is older and newer and if we choose fifo or lifo in the stock settings will make which stock should go for the selling first and last
+    
+    %Item variant and Item Attribute%
+        Where Item variant is the template we use when the item has variants in it like the attriubutes of colour,size and shape so the we can create variant template for that item and then we can create a single or multiple variant products according to the no of attributes in it so the company can easily segregate and maintain the variant items easily.
+    
+    %Brand%
+        It is the company who get the products from the company for the sale and the company also give the liscence to the brand and we can also mention the brand in the item itself and also in the brand we can mention the default cost center,default warehouse,default purchase and selling terms so the manual work will reduce and it automatically fetches when we click that brand
+    
+    %Item Manufacturer%
+        It is not always the manfacturer and company can be same so we create the manfacturer and assign to the item manufacturer and can give the manfacturer part number for the better tracking which manufacturer produced the item because for the same item there will be multiple manfacturer so the manufacturer part number is important.
+    
+    %Pricing%
+        In this where the user can create multiple price list with different item price according to the territory and countries and where we can use in the sales and purchase flow doctype like sales and purchase order and in the invoices also so it is very easy to maintain the pricing list separately so the user can easily use it instead of the manual entry of the price.
+    
+    %Opening Stock%
+        In opening stock tool is used to make the stock entry for the new fiscal year where the new or the last year stock can be entered here for the next fiscal year here we can make the stock entry for both serialized and non serialized item where we can make the entry through the csv or excel files also where we can mention the serial and batch no there if it is not present in it automatically it creates.
+    
+    %Periodic and perptual Accounting%
+        In these are the two stock accounting in the ERP
+
+        Periodic-In this where only the stock ledger affects and manually we should update the General ledger else the accounting expense will be inccorect and we should manually adjust that in the month end
+
+        Perptual-Where in this both stock GL affect so we not manually handle the expense account and it is also easy for the user to maintain the accounting and inventory easily.
+    
+    %Product Bundle%
+        It is the tool used to combine the two or more products and sell as bundle and where the parent item should be the non service item and we can create the actual child items and add as child in the product bundle and where in the sales flow we can see that child items in the packaging list and the basic example is let's take the phone which contains the phone charger and earpods etc so it is the bundle product which is useful during the billing.
+    
+    %Stock reservation Entry%
+        The stock reservation entry is used to reserve the stock by using the sales order for this first we should enable the stock reservation in the stock settings and then in the sales order item we should enable reserve stock and after submitting the sales order we can create the reserve stock entry and if there not suffcient amount of product is in warehouse as they needed in the sales order it will mark as partially reserved to make this happen we should also enable that in the stock settings and where we can also make unreserve and the entry will be automatically cancelled in the stock reservation entry
+    
+    %Pick List%
+        The pick list is a tool where we can get the items required by the company,customer or for the manufacture and where we can make the stock reservation and also can update the ledger by making the reservation and also can create the delivery note if it is the type delivery and can make the purchase receipt if it is in the type of material request
+    
+    %Putaway Rule%
+        This tool is used to allocate the stock to the warehouses correctly as per their capacity holding so during the purchase receipt or material request when we apply the putaway rule as per the priority and free space in the warehouse it allocate the stock if there is no space to fill it will show the error and if there is same qty and same priority then the first rule created will apply and the stock moves to that warehouse.
+    
+    %Warehouse Capacity summary%
+        Which is used to see the capacity of the each warehouse and can edit the capacity also in the warehouse capacity summmary itself
+    
+    %packaging slip%
+        It is the tool which indicates how may packages are present in the delivery note usually we create it from the delivery note and where in that when we give the net weight and package no from and to itslef split the weight and it also has gross weight which will include the net weight plus the packing weight and we can also track for the batched items also
+    
+    %Land cost Voucher%
+        It is used to increase the stock value which happened during the transportation so during in land cost voucher we will book the expense in the freight and forward charges and if we need that to affect in the accounting ledger we can create the purchase invoice and we can link the purchase receipt or purchase invoice and we can only link the purchase invoice if have with the update stock enabled and we can also make the payment entry and can create the purchase invoice with is paid 
+    
+    %shipment%
+        It is used to track the shipment of packages where it is moving around and their statuses whether it is pickup from the company address and whther it is in progress or it delivered to the customer where it will have the refernce of delivery note and shipment note their measurements including weight and where there should be the customer or supplier or to the company there should be a contact person with email and phone no so it is easy to track and where we can also make the shipping automate using the shipping integrations.
+    
+    %shipping rule%
+        Instead of giving the ship charges manually every time we can give the shipping rule based on the net or total amount and where we can give in the three ranges of price and where the country filters also valid and the shipping amount and the shipping account also will be declared here so we can automate the shipping prices during the selling and buying
+    
+    %Stock closing Entry%
+        This the tool used to close the stock entry for the particular period yearly,quartely or monthly so when we need the report we can easily fetch and if without stock closing entry lets say we have to take the report of the 5 years of stock movements where it will take from the stock ledger and check all invoices,purchase receipt and delivery note so it make the process slow so where the closing entry act like the reference or snapshot
+    
+    %Disassemble Order%
+        This used to return the good raw materials to the warehouse again where we use the completed or closed work order and there we will create disassemble order and remove the materials in the bad condition and keep the materials in the good condition and make the stock entry with the type as disassemble and we can verify that in the stock ledger
+    
+    %Repack%
+        It is the tool used to make the product to small modules for example lets we have the 50 kg of rice sack but the customer mostly needs the 5kg pack so where we will make the out entry in stock and make the in entry in warehouse as 10 packs of rice by dividing the rice sack so we can easily maintain the stock and sales.
+    
+    %Stock reposting%
+        This tool is used to repost the future posting if there is any changes in the back dated entries and where it mostly run in the background to change and where we have the settings for it we can set the limit time to run the jobs between time and can also set the update based on the item and also it may slow the process since it runs many background jobs so we set the time limit and can also set the day where it can ship the time limit and it is the most important tool to correctly maintain the stock ledger and GL if the perptual inventory is enabled.
+    
+    %STOCK REPORTS%
+    %Stock Ledger%
+        In this where we can see the in and out entries in the stock warehouses can be viewed and also the incoming rate,valuavation rate and also the balance quantity available after the in or out entry
+    
+    %Stock Projected Quantity Report%
+        In this where we can see all the numbers of the stock how much we planned,how much we buy and how much we sale and how much we requested qty,ordered qty reserved qty and reorder quantity all the things in it.
+    
+    %Quick Stock Balance%
+        In this tool where we can quickly check the stock balance their value easily ans where in thiswe can aslo view the stock balance report also.
+    
+    %Stock and Account value comparision%
+        Which will compare the stock value and the account value and its difference and give the report
+    
+    %Stock ledger variance report%
+        Where in this we can find whether there is a mismatch in the stock enteries and the mismatch during the reposting enteries
+    
+    %POS profile%
+        This is the profile where we can assign the particular user,payment mode,and we can also assign to the particular customer so it is not necessary to always give the details manually and if we set the user as default when they login it immediately goes to the pos profile
+    
+    %POS invoice%
+        It is normal like sales invoice but where the customer will pay the money immediately but it will not affect the ledger immediately so to make the entry in GL before making any pos invoices we should open this and after all the invoices and transcations happened it will affect the ledger by closing the pos opening it will make the entry as one for all the pos invoices and where we can see the reserved pos stock in the stock projected qty report we can also use loyalty reedem here in the billing of pos
+    
+    %Manufacturing and its dashboard%
+        The manufacturing in erp is the porcess which contains the several doctypes like BOM,job card,Work order,quality inspection and where it has the dash board with visual representation where it represent the data like how many manufacture done in a period how many work order pending completed and how many work order are waiting for the quality inspection and the analysis of work and quality and all so it is more useful to track the manufacturing products
+    
+    %Workstation%
+        It is the doctype which represent the work place to make the job done and where during the operation we can assign this workstation where the operation to be done and it also can contain working hours,holiday list and also the declaration of cost for the workstation to the operation to be done
+    
+    %Operation%
+        In this we can metion the what job to be done and where we can also mention the sub operations and also mention the quality inspection time and where it automatically fetches during the quality inspection and will make the description of the operation
+    
+    %Routing%
+        It is the doctype we can refer in the BOM which contains what operation to be done for that BOM and can mention the operations its cost,time and hourly rate so we cut the manual working by choosing the operations in the BOM each time so if we choose the routing template it automatically fetches the details
+    
+    %BOM%
+        BOM is the most important feature in the manufacturing which is use to mention the required raw materials and also the operation to be done can be mentioned here and where it will calculate the price of both raw materials and operating cost and from the bom we can create the workorder to done the opearations
+    
+    %Work order%
+        This is the doctype helps to notify that work to be done for the manufacture where it can be created from the production plan or the BOM and from the workorder we can make the material transfer first which required for the production and then for Work order we can create the job card and after the work done we can finish it and create the stock entry for the completed product and in this we can choose the source warehouses and target warehouses
+    
+    %Job card%
+        Which can be created from the work order and can assign the job to the particular employee or a group of employee and can start,close and make the job finish and it contains the work stations and can mention the scrap items and the warehouse to store the scrap item where it also contains the scheduled log time to see the progress of the job
+    
+    %production plan%
+        In this where we can make the production plan based on the sales order or the material request and can get the raw materials and bom and can make the work order from the plan and it basically contains of two type if it is the customer asked production we creatre with sales order and if it is the internal requirement of the company then we will create with type material request.
+    
+    %plant floor%
+        This the doctype where we can visualize the job card and also the machines in the work station and can also add or move the stock in the stock summary for the production or maintenace and we can assign the plant floor to the workstation in the workstation doctype.
+    
+    %Capacity planing%
+        It is the tool we used to the make the capacity planning for the work station so we can maintain the work orders efficiently and we should enable the capacity planning in the manufacturing days and where we can enable the allow overtime allocation and also allocation during the holidays we can also fix the production capacity how many job can occur at same time in workstation
+    
+    %Down time Entry%
+        This should be create by the user manaually when the machine is under maitanence or repair or not working in the proper condition then we use the down time entry
+    
+    %Downtime Analysis%
+        By using this report where we can make analysis which machine is performing poor and it also has the visual analysis
+    
+    %Tracking semifinished goods%
+        In this where in v15 we create multiple boms to track the subassemblies and to make the process easier in v15 where they create single BOM and can track all the semi finshed goods from that single BOM itself so we don't need the multiple BOMS
+    
+    %MRP(Material Requirements planning)%
+        It is the tool which helps to plan the production by creating the demand and then by using the analysis they will make report when to increase and decrease the manufacturing by using sales forecast and always it check the internal requirement and also the external and makes the delivery schdeule perfectly and plan the production according to that so it is most important tool in the manufacturing
+    
+    %Work Order Summary%
+        Provides a summary of all Work Orders created for manufacturing. It helps track the status of production orders such as Draft, Submitted, In Process, Completed, or Cancelled. Managers use this report to monitor overall production progress and pending work.
+
+    %BOM Search%
+        Helps users quickly find Bills of Materials (BOMs) for specific items. It shows BOM details, status, and versions available for a product. This report is useful when multiple BOMs exist for the same item.
+
+    %BOM Stock Report%
+        Displays the availability of raw materials required for a BOM. It helps identify shortages before starting production and ensures sufficient stock is available for manufacturing.
+
+    %BOM Explorer%
+        Provides a hierarchical view of BOMs and sub-assemblies. Users can analyze the complete product structure, including raw materials and intermediate products, making it easier to understand manufacturing dependencies.
+
+    %BOM Operations Time%
+        Shows the estimated operation time required for manufacturing items based on BOM operations. It helps in capacity planning, production scheduling, and identifying time-consuming operations.
+
+    %Production Planning Report%
+        Analyzes production requirements based on demand and available resources. It helps manufacturers plan production quantities, allocate resources efficiently, and avoid stock shortages or overproduction.
+
+    %Production Analytics%
+        Provides insights into manufacturing performance using key production metrics. It helps management evaluate productivity, production efficiency, completed quantities, and manufacturing trends.
+
+    %Downtime Analysis%
+        Tracks machine or workstation downtime during production. It helps identify reasons for production delays, measure lost production time, and improve overall equipment efficiency.
+
+    %Work Order Consumed Materials%
+        Shows the actual raw materials consumed against each Work Order. It helps compare planned versus actual consumption and identify material wastage or excess usage.
+
+    %Issued Items Against Work Order%
+        Displays all materials issued for specific Work Orders. It helps track material movement from stores to production and ensures proper inventory control during manufacturing.
+
+    %Returned Materials Against Work Order%
+        Tracks materials returned from production back to inventory. It helps manage unused or excess materials and improves stock accuracy.
+
+    %BOM Stock Analysis%
+        Analyzes the stock availability of BOM components and highlights shortages. It helps planners determine whether current inventory can fulfill production requirements before creating Work Orders.
+
+    %Forecasting Using Exponential Smoothing%
+        Uses historical demand data to predict future product demand. It helps manufacturers create accurate production plans, maintain optimal inventory levels, and improve demand forecasting accuracy.
+    
+    %Subcontracting%
+        It is the process where the company supplies the raw materials and outsurce the manufacturing process and then get the finished item form the subcontractor for this the item must be the non-stock item 
+    
+    %subcontracting inward%
+        In this where the company will acts as the subcontracter and get the manufacturing materials from the customer and sale the the finished good to them with operation cost.
+    
+    %Project%
+        Where in this doctype we first create the project according to the customer's sales order and we can assign the users for that project and can send the email about the task and in this we can assign the tasks to the particular user and where the user will put their progress using the timesheet and where the customer can verify it and after completing the task we should change their status to the completed and once all the tasks in the project are completed their status automatically change to completed and where we can set the start and expected end date for the project.
+    
+    %Project Type%
+        Where in the project type we can create various types especially like manufacturing,assembling projects like that and where in default we have two options internal and external and we can also create our own according to the user convenient.
+    
+    %Timesheet%
+        where we can update the job done by the user and can link the task and also can use the timer and after complete the job where it automatically takes the time or we can manually update the time and also we can link this time sheet in the tasks and from this we can create the sales invoice for billing and with HR integration we can also generate the salary slip
+    
+    %CRM%
+        Where this module is used to handle the relationship with customers in this we can manage the lead,oppturnities,and the meetings with customers,can also manage the quotation and sales orders we can also see the reports and analysis of progress in this CRM module for the quotation and sales
+    
+    %Lead Source%
+        This is the tool used to store the source by how the customer knows our company simple by refering or marketing for example linked in where we do pay for it then during the new account creation of the customer we can ask how do you know our company by using it we can come to know whether the lead source is useful or not
+    
+    %sales stage%
+        In the sales where we have several stages so this doctype is used to indicate that like sales person explained the products and in the meeting progress for the quotation,negotiation at last win or lose.
+    
+    %oppturnity type%
+        where in this the people can have the interest to the compnay by interacting for the various reasons like to apply for career,sales,maitenance and support so we can use this doctype to save these types and use during the lead details filling what oppurinity they need for seeking
+    
+    
+    
+
+        
+
+
+        
+
+
+
+
+
+        
+
+
+
+        
+        
+
+        
+
+
+
